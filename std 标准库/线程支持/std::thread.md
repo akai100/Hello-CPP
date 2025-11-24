@@ -17,5 +17,6 @@ thread(thread && other) noexcept;
 template<class F, class... Args>
 explicit thread(F && f, Args&&... args)
 
+// 复制构造函数被弃置，std::thread 不可复制，两个 std::thread 对象不能表示同一执行线程
 thread(const thread&) = delete;
 ```
