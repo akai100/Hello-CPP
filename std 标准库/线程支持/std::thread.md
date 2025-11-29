@@ -119,7 +119,9 @@ t.join();
 
   调用 detach() 后，std::thread 对象立即转为「non-joinable 状态」（joinable() 返回 false）；
 
+```c++
 void child_task() {
 }
+```
 
 
